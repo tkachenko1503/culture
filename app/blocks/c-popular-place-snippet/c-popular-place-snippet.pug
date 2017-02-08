@@ -1,0 +1,17 @@
+include ../image/image.pug
+
+mixin c-popular-place-snippet_type_category(place)
+    - var category = DICTIONARY.PLACES_CATEGORIES[place.category];
+
+    .c-popular-place-snippet.c-popular-place-snippet_type_category
+        +img-responsive(place.image, category)
+        .caption
+            .c-popular-place-snippet__title= category
+            .c-popular-place-snippet__count #{place.count} МЕСТ
+
+mixin c-popular-place-snippet_type_location(place)
+    .c-popular-place-snippet.c-popular-place-snippet_type_location
+        +img-responsive(place.image, place.title)
+        .caption
+            .c-popular-place-snippet__title= place.title
+            .c-popular-place-snippet__location= place.location

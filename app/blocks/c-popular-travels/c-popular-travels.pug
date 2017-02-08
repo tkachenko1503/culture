@@ -1,0 +1,14 @@
+include ../c-carousel-slider/c-carousel-slider.pug
+include ../c-popular-travels-snippet/c-popular-travels-snippet.pug
+
+mixin c-popular-travels(travels)
+    - 
+        var carouselParams = {
+            slidesToShow: 4,
+            slidesToScroll: 2
+        };
+
+    .c-popular-travels
+        +c-carousel-slider('ПОПУЛЯРНЫЕ МАРШРУТЫ', carouselParams)
+            each travel in travels
+                +c-popular-travels-snippet(travel)

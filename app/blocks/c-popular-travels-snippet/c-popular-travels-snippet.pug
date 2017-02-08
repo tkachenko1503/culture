@@ -1,0 +1,12 @@
+include ../image/image.pug
+
+mixin c-popular-travels-snippet(travel)
+    .thumbnail.c-popular-travels-snippet
+        +img-responsive(travel.image, travel.name)
+        .capiton
+            h3.c-popular-place-snippet__title= travel.name
+
+            if travel.type === 'cluster'
+                .c-popular-place-snippet__count #{travel.count} МЕСТ
+            else
+                .c-popular-place-snippet__location= travel.location

@@ -1,0 +1,18 @@
+include ../c-carousel-slider/c-carousel-slider.pug
+include ../c-popular-place-snippet/c-popular-place-snippet.pug
+
+mixin c-popular-places(places, type, params)
+    - 
+        var carouselParams = Object.assign({
+            slidesToShow: 4,
+            slidesToScroll: 2
+        }, params);
+
+    .c-popular-places
+        +c-carousel-slider('ПОПУЛЯРНЫЕ МЕСТА', carouselParams)
+            if type === 'categories'
+                each place in places                
+                    +c-popular-place-snippet_type_category(place)
+            else
+                each place in places            
+                    +c-popular-place-snippet_type_location(place)                    

@@ -1,0 +1,14 @@
+include ../c-virtual-tour-snippet/c-virtual-tour-snippet.pug
+include ../c-carousel-slider/c-carousel-slider_controls_with-filters.pug
+
+mixin c-virtual-tours(tours, tourFilters)
+    - 
+        var carouselParams = {
+            slidesToShow: 5,
+            slidesToScroll: 2
+        };
+
+    .c-virtual-tours
+        +c-carousel-slider_controls_with-filters('ВИРТУАЛЬНЫЕ ТУРЫ', carouselParams, tourFilters)
+            each tour in tours
+                +c-virtual-tour-snippet(tour)

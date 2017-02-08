@@ -1,0 +1,14 @@
+include ../c-carousel-slider/c-carousel-slider.pug
+include ../c-tradicions-snippet/c-tradicions-snippet.pug
+
+mixin c-tradicions(tradicions)
+    - 
+        var carouselParams = {
+            slidesToShow: 5,
+            slidesToScroll: 2
+        };
+        
+    .c-tradicions
+        +c-carousel-slider('ТРАДИЦИИ', carouselParams)
+                each tradicion in tradicions
+                    +c-tradicions-snippet(tradicion)

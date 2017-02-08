@@ -1,0 +1,8 @@
+include ../image/image.pug
+
+mixin c-russia-forms-snippet(form)
+    .thumbnail.c-russia-forms-snippet
+        +img-responsive(form.image, form.name)
+        .capiton
+            h3.c-russia-forms-snippet__title= form.name
+            .c-russia-forms-snippet__place= form.place

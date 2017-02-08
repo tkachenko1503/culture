@@ -1,0 +1,25 @@
+include ../image/image.pug
+
+mixin c-popular-cities-snippet(city)
+    .thumbnail.c-popular-cities-snippet
+        +img-responsive(city.image, city.name)
+        .capiton
+            .c-popular-cities-snippet__blazon
+                +img-circle(city.blazon)
+            .c-popular-cities-snippet__name
+                h3= city.name
+            .c-popular-cities-snippet__description= city.description
+            +c-popular-cities-snippet__stats(city.stats)
+
+mixin c-popular-cities-snippet__stats(stats)
+    .c-popular-cities-snippet__stats
+        .container
+            .row
+                each stat in stats
+                    .col-xs-3
+                        +c-popular-cities-snippet__stat(stat)                
+
+mixin c-popular-cities-snippet__stat(stat)
+    .c-popular-cities-snippet__stat
+        .c-popular-cities-snippet__stat-count= stat.count
+        .c-popular-cities-snippet__stat-category= DICTIONARY.PLACES_CATEGORIES[stat.category]

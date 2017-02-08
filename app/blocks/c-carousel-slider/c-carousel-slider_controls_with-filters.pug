@@ -1,0 +1,28 @@
+include ../icon/icon.pug
+include ../form/form.pug
+
+mixin c-carousel-slider_controls_with-filters(title, carouselParams, filters)
+    .container.c-carousel-slider(
+        data-js-widget='carousel'
+        data-js-params=carouselParams
+    )
+        .c-carousel-slider__header
+            .c-carousel-slider__title= title
+
+            .c-carousel-slider__controls
+                .c-carousel-slider__filters
+                    each filter in filters
+                        +checkbox-inline(
+                            DICTIONARY.PLACES_CATEGORIES[filter],
+                            'virtual-tour-' + filter,
+                            'virtual-tour-id-' + filter)
+
+                .c-carousel-slider__nav-buttons
+                    span.c-carousel-slider__nav-previous
+                        +icon('chevron-left')
+                    span.c-carousel-slider__nav-next
+                        +icon('chevron-right')
+                        
+        .c-carousel-slider__slides
+            block
+    

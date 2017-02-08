@@ -1,0 +1,33 @@
+include ../c-page-header/c-page-header.pug
+include ../c-page-footer/c-page-footer.pug
+
+doctype html
+
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
+        title Culture
+
+        link(rel="stylesheet", type="text/css", href="/css/vendors.css")
+        link(rel="stylesheet", type="text/css", href="/css/styles.css")
+        block page-styles
+
+        script(type="text/javascript", src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&mode=debug")
+
+    body
+        #culture-app
+            block page-header
+                +c-page-header
+
+            block page-content
+                h1 Hello Culture
+
+            block page-footer
+                +c-page-footer
+
+        script(type="application/javascript", src="/js/vendors.js")
+        script(type="application/javascript", src="/js/app.js")
+        block page-scripts

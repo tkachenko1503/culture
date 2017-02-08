@@ -1,0 +1,7 @@
+include ../image/image.pug
+
+mixin c-tradicions-snippet(tradicion)
+    .thumbnail.c-tradicions-snippet
+        +img-responsive(tradicion.image)
+        .capiton
+            h3.c-tradicions-snippet__title= tradicion.title

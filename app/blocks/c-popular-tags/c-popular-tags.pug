@@ -1,0 +1,14 @@
+include ../button/button.pug
+
+mixin c-popular-tags(tags)
+    .container.c-popular-tags
+        .row
+            .col-xs-2
+                .c-popular-tags__label ПОПУЛЯРНЫЕ ТЭГИ:
+            .col-xs-10
+                .c-popular-tags__tag-list
+                    each tag in tags
+                        +c-popular-tags__tag(tag)
+
+mixin c-popular-tags__tag(tag)
+        +a-btn('#')(class='c-popular-tags__tag')= tag

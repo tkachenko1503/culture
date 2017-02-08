@@ -1,0 +1,19 @@
+include ../icon/icon.pug
+
+mixin c-carousel-slider(title, carouselParams)
+    .container.c-carousel-slider(
+        data-js-widget='carousel'
+        data-js-params=carouselParams
+    )
+        .c-carousel-slider__header
+            .c-carousel-slider__title= title
+
+            .c-carousel-slider__controls
+                .c-carousel-slider__nav-buttons
+                    span.c-carousel-slider__nav-previous
+                        +icon('menu-left')
+                    span.c-carousel-slider__nav-next
+                        +icon('menu-right')
+                        
+        .c-carousel-slider__slides
+            block

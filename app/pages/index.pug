@@ -1,0 +1,30 @@
+extends ../blocks/c-layout/c-layout.pug
+
+include ../blocks/c-search-map/c-search-map.pug
+include ../blocks/c-popular-tags/c-popular-tags.pug
+include ../blocks/c-popular-places/c-popular-places.pug
+include ../blocks/c-virtual-tours/c-virtual-tours.pug
+include ../blocks/c-spec-project/c-spec-project.pug
+include ../blocks/c-russia-forms/c-russia-forms.pug
+include ../blocks/c-tradicions/c-tradicions.pug
+include ../blocks/c-popular-travels/c-popular-travels.pug
+include ../blocks/c-museum/c-museum.pug
+include ../blocks/c-popular-cities/c-popular-cities.pug
+
+block page-content
+    main
+        +c-search-map
+        +c-popular-tags(popularTags)
+        +c-popular-places(popularPlaces, 'categories')
+        +c-virtual-tours(virtualTours, virtualToursFilters)
+        +c-spec-project
+        +c-russia-forms(russiaForms)
+        +c-tradicions(tradicions)
+        +c-popular-travels(popularTravels)
+        +c-museum
+        +c-popular-places(popularLocations, 'locations')
+        +c-popular-cities(popularCities)
+        
+    
+    
+    

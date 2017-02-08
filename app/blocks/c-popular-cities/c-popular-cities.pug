@@ -1,0 +1,15 @@
+include ../c-carousel-slider/c-carousel-slider.pug
+include ../c-popular-cities-snippet/c-popular-cities-snippet.pug
+
+mixin c-popular-cities(cities)
+    - 
+        var carouselParams = {
+            slidesToShow: 3,
+            slidesToScroll: 2
+        };
+
+    .c-popular-cities
+        +c-carousel-slider('ПОПУЛЯРНЫЕ ГОРОДА', carouselParams)
+            each city in cities                
+                +c-popular-cities-snippet(city)
+    

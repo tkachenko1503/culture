@@ -1,0 +1,8 @@
+include ../image/image.pug
+
+mixin c-virtual-tour-snippet(tour)
+    .thumbnail.c-virtual-tour-snippet
+        +img-circle(tour.image)
+        .caption
+            .c-virtual-tour-snippet__title= tour.name
+            .c-virtual-tour-snippet__place= tour.place

@@ -1,0 +1,44 @@
+include ../navbar/navbar.pug
+include ../form/form.pug
+include ../button/button.pug
+
+mixin c-page-header
+    header.c-page-header
+        .c-page-header__main-menu
+            +navbar-static-logo(
+                'КУЛЬТУРА.РФ',
+                'culture',
+                'inverse',
+                '#',
+                '/images/site-logo.png'
+            )
+                +nav-items('c-page-header__main-menu-items')
+                    +nav-item('#') ПОСЕТИТЬ
+                    +nav-item('#') ЧИТАТЬ
+                    +nav-item('#') СМОТРЕТЬ
+                    +nav-item('#') СПЕЦПРОЕКТЫ
+                +nav-items-right
+                    +nav-item
+                        img.c-page-header__promo-image(
+                            src='/images/promo.png'
+                        )
+                        .c-page-header__promo
+                            .c-page-header__promo-title Ночь русского кино
+                            .c-page-header__promo-sub-title В 85 регионах
+
+        .c-page-header__sub-menu
+            +navbar-static-simple
+                +nav-items
+                    +nav-item('#') ИСКУССТВО
+                    +nav-item('#') СПЕКТАКЛИ
+                    +nav-item('#') МУЗЫКА
+                    +nav-item('#') ЛИТЕРАТУРА
+                    +nav-item('#') АРХИТЕКТУРА
+                    +nav-item('#') КИНО
+                    +nav-item('#') ТРАДИЦИИ
+                +nav-items-right
+                    +nav-item
+                        .c-page-header__actions
+                            +icon-btn('search')
+                            +icon-btn('bookmark')
+                            +btn('ВОЙТИ', 'black')

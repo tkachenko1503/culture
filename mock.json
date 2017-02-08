@@ -1,0 +1,277 @@
+{
+    "DICTIONARY": {
+        "PLACES_CATEGORIES": {
+            "park": "ПАРКИ",
+            "museum": "МУЗЕИ",
+            "concert": "КОНЦЕРТЫ",
+            "theater": "ТЕАТРЫ",
+            "library": "БИБЛИОТЕКИ",
+            "figure": "ОБРАЗА",
+            "perfomance": "СПЕКТАКЛЯ"
+        }
+    },
+    "popularTags": [
+        "для детей",
+        "на воздухе",
+        "мастер-классы",
+        "бесплатно",
+        "для молодёжи",
+        "конкурс",
+        "праздники",
+        "музеи",
+        "искуство"
+    ],
+    "popularPlaces": [
+        {
+            "image": "http://placehold.it/302x228&text=Park",
+            "category": "park",
+            "count": 567
+        },
+        {
+            "image": "http://placehold.it/302x228&text=Museum",
+            "category": "museum",
+            "count": 567
+        },
+        {
+            "image": "http://placehold.it/302x228&text=Concert",
+            "category": "concert",
+            "count": 567
+        },
+        {
+            "image": "http://placehold.it/302x228&text=Park",
+            "category": "park",
+            "count": 567
+        },
+        {
+            "image": "http://placehold.it/302x228&text=Museum",
+            "category": "museum",
+            "count": 567
+        },
+        {
+            "image": "http://placehold.it/302x228&text=Concert",
+            "category": "concert",
+            "count": 567
+        },
+        {
+            "image": "http://placehold.it/302x228&text=Theater",
+            "category": "theater",
+            "count": 567
+        }
+    ],
+    "popularLocations": [
+        {
+            "image": "http://placehold.it/236x170&text=Location",
+            "title": "Мемориальный комплекс «героям сталинградской битвы» на мамаевом кургане",
+            "location": "Волгоград"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Location",
+            "title": "Государственный музей-заповедник м. а. шолохова",
+            "location": "Вёшенская"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Location",
+            "title": "Музей-усадьба л. н. толстого «ясная поляна»",
+            "location": "Ясная поляна"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Location",
+            "title": "Костромской архитектурно-этнографический и ландшафтный музей-заповедник «костромская слобода»",
+            "location": "Кострома"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Location",
+            "title": "Государственный лермонтовский музей-заповедник «тарханы»",
+            "location": "Тархан"
+        }
+    ],
+    "virtualTours": [
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Государственный исторический музей",
+            "place": "Москва"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Российский этнографический музей",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Музей-заповедник «царское село»",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Государственный музей-заповедник «петергоф»",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Государственный исторический музей",
+            "place": "Москва"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Российский этнографический музей",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Музей-заповедник «царское село»",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Государственный музей-заповедник «петергоф»",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x236&text=Theater",
+            "name": "Музей хрусталя им. мальцовых",
+            "place": "Гусь-Хрустальный"
+        }
+    ],
+    "virtualToursFilters": [
+        "theater",
+        "museum",
+        "library"
+    ],
+    "russiaForms": [
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Российский этнографический музей",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Башня святого олафа",
+            "place": "Выборг"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Музей-заповедник царицыно",
+            "place": "Моска"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Никитский ботанический сад",
+            "place": "Ялта"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Союзмультфильм",
+            "place": "Моска"
+        }
+    ],
+    "tradicions": [
+        {
+            "image": "http://placehold.it/236x170&text=Tradicion",
+            "title": "Свадебный обряд северных осетин"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Tradicion",
+            "title": "Частушки артинского района свердловской области"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Tradicion",
+            "title": "Лирические песни русских старожилов томского приобья"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Tradicion",
+            "title": "Традиционные технологии стеклоделия в селивановском районе владимирской области"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Tradicion",
+            "title": "Новгородская традиция игры на русских крыловидных гуслях"
+        }
+    ],
+    "popularTravels": [
+        {
+            "image": "http://placehold.it/302x393&text=Travels",
+            "name": "праздник огнедышаших гор",
+            "type": "cluster",
+            "count": 5
+        },
+        {
+            "image": "http://placehold.it/302x393&text=Travels",
+            "name": "озера россии",
+            "type": "cluster",
+            "count": 5
+        },
+        {
+            "image": "http://placehold.it/302x393&text=Travels",
+            "name": "Заповедный крым",
+            "type": "cluster",
+            "count": 5
+        },
+        {
+            "image": "http://placehold.it/302x393&text=Travels",
+            "name": "странноприимный дом графа шереметева",
+            "type": "place",
+            "location": "москва"
+        }
+    ],
+    "popularCities": [
+        {
+            "image": "http://placehold.it/413x390",
+            "blazon": "http://placehold.it/45x45",
+            "name": "москва",
+            "description": "Столица Российской Федерации, город федерального значения, административный центр Центрального федерального округа и центр Московской области",
+            "stats": [
+                {
+                    "category": "museum",
+                    "count": 193
+                },
+                {
+                    "category": "figure",
+                    "count": 345
+                },
+                {
+                    "category": "perfomance",
+                    "count": 239
+                }
+            ]
+        },
+        {
+            "image": "http://placehold.it/413x390",
+            "blazon": "http://placehold.it/45x45",
+            "name": "ярославль",
+            "description": "Ярославль — третий по величине населения город Центрального федерального округа Российской Федерации.",
+            "stats": [
+                {
+                    "category": "museum",
+                    "count": 234
+                },
+                {
+                    "category": "figure",
+                    "count": 123
+                },
+                {
+                    "category": "perfomance",
+                    "count": 897
+                }
+            ]
+        },
+        {
+            "image": "http://placehold.it/413x390",
+            "blazon": "http://placehold.it/45x45",
+            "name": "белгород",
+            "description": "Расположен на южной окраине Среднерусской возвышенности, на берегах Белгородского водохранилища, рек Везелка и Северский Донец, в 700 км к югу от Москвы, в 40 км от границы с Украиной.",
+            "stats": [
+                {
+                    "category": "museum",
+                    "count": 821
+                },
+                {
+                    "category": "figure",
+                    "count": 355
+                },
+                {
+                    "category": "perfomance",
+                    "count": 152
+                }
+            ]
+        }
+    ]
+}

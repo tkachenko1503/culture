@@ -1,0 +1,15 @@
+include ../c-carousel-slider/c-carousel-slider.pug
+include ../c-russia-forms-snippet/c-russia-forms-snippet.pug
+
+mixin c-russia-forms(forms)
+    - 
+        var carouselParams = {
+            slidesToShow: 5,
+            slidesToScroll: 2
+        };
+        
+    .c-russia-forms
+        +c-carousel-slider('ОБРАЗЫ РОССИИ', carouselParams)
+            each form in forms
+                +c-russia-forms-snippet(form)
+        
