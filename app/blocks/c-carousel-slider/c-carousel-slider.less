@@ -1,31 +1,57 @@
-.c-carousel-slider {
-    .c-carousel-slider__header {
-        display: flex;
+.c-carousel-slider__header {
+    display: flex;
+}
+
+.c-carousel-slider__controls {
+    flex-grow: 1;
+    border-top: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.c-carousel-slider__filters,
+.c-carousel-slider__nav-buttons {
+    color: #C4C4C4;
+    font-size: 12px;        
+}
+
+.c-carousel-slider__nav-previous,
+.c-carousel-slider__nav-next {
+    cursor: pointer;
+}
+
+.c-carousel-slider__title {
+    border-top: 1px solid #3C3C3C;        
+    color: #F63839;
+    font-size: 12px;
+}
+
+.c-carousel-slider__controls,
+.c-carousel-slider__title {
+    padding: 20px 0;
+}
+
+.c-carousel-slider__filters,
+.c-carousel-slider__nav-previous {
+    margin-right: 20px;
+}
+
+.c-carousel-slider__filters {
+    label {
+        margin: 0;
+        cursor: pointer;        
     }
 
-    .c-carousel-slider__controls {
-        flex-grow: 1;
-        border-top: 1px solid #EEEEEE;
+    input {
+        position: absolute;
+        left: -9999px;
     }
 
-    .c-carousel-slider__nav-buttons {
-        text-align: right;
-        color: #C4C4C4;
-        font-size: 12px;        
+    .checkbox-inline {
+        padding-left: 0px;
     }
 
-    .c-carousel-slider__title {
-        border-top: 1px solid #3C3C3C;        
-        color: #F63839;
-        font-size: 12px;
-    }
-
-    .c-carousel-slider__controls,
-    .c-carousel-slider__title {
-        padding: 20px 0;
-    }
-
-    .c-carousel-slider__nav-previous {
-        margin-right: 20px;
+    .checkbox-inline+.checkbox-inline {
+        margin-left: 20px;
     }
 }

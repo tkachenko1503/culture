@@ -8,7 +8,7 @@ mixin c-popular-places(places, type, params)
             slidesToScroll: 2
         }, params);
 
-    .c-popular-places
+    .c-section.c-section_top-indent_sm.c-popular-places
         +c-carousel-slider('ПОПУЛЯРНЫЕ МЕСТА', carouselParams)
             if type === 'categories'
                 each place in places                

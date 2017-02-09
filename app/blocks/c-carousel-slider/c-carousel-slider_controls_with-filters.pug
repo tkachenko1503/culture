@@ -15,13 +15,14 @@ mixin c-carousel-slider_controls_with-filters(title, carouselParams, filters)
                         +checkbox-inline(
                             DICTIONARY.PLACES_CATEGORIES[filter],
                             'virtual-tour-' + filter,
-                            'virtual-tour-id-' + filter)
+                            'virtual-tour-id-' + filter
+                        )
 
                 .c-carousel-slider__nav-buttons
                     span.c-carousel-slider__nav-previous
-                        +icon('chevron-left')
+                        +icon('menu-left')
                     span.c-carousel-slider__nav-next
-                        +icon('chevron-right')
+                        +icon('menu-right')
                         
         .c-carousel-slider__slides
             block

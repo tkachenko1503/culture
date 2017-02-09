@@ -8,7 +8,7 @@ mixin c-virtual-tours(tours, tourFilters)
             slidesToScroll: 2
         };
 
-    .c-virtual-tours
+    .c-section.c-section_top-indent_m.c-virtual-tours
         +c-carousel-slider_controls_with-filters('ВИРТУАЛЬНЫЕ ТУРЫ', carouselParams, tourFilters)
             each tour in tours
                 +c-virtual-tour-snippet(tour)

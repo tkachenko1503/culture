@@ -71,7 +71,7 @@ gulp.task('js:dev', () => {
     .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init())
-    .pipe(sourcemaps.write('./dist/public/js/'))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/public/js/'));
 });
 
