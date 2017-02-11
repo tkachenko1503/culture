@@ -1,9 +1,10 @@
 include ../image/image.pug
 
 mixin c-popular-cities-snippet(city)
-    .thumbnail.c-popular-cities-snippet
+    .c-popular-cities-snippet
         +img-responsive(city.image, city.name)
-        .capiton
+        .c-popular-cities-snippet__overlay
+        .caption
             .c-popular-cities-snippet__blazon
                 +img-circle(city.blazon)
             .c-popular-cities-snippet__name
@@ -13,11 +14,8 @@ mixin c-popular-cities-snippet(city)
 
 mixin c-popular-cities-snippet__stats(stats)
     .c-popular-cities-snippet__stats
-        .container
-            .row
-                each stat in stats
-                    .col-xs-3
-                        +c-popular-cities-snippet__stat(stat)                
+        each stat in stats
+            +c-popular-cities-snippet__stat(stat)                
 
 mixin c-popular-cities-snippet__stat(stat)
     .c-popular-cities-snippet__stat

@@ -8,7 +8,7 @@ mixin c-popular-cities(cities)
             slidesToScroll: 2
         };
 
-    .c-popular-cities
+    .c-section.c-section_top-indent_m.c-popular-cities
         +c-carousel-slider('ПОПУЛЯРНЫЕ ГОРОДА', carouselParams)
             each city in cities                
                 +c-popular-cities-snippet(city)

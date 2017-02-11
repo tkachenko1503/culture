@@ -8,7 +8,7 @@ mixin c-popular-travels(travels)
             slidesToScroll: 2
         };
 
-    .c-popular-travels
+    .c-section.c-section_top-indent_m.c-popular-travels
         +c-carousel-slider('ПОПУЛЯРНЫЕ МАРШРУТЫ', carouselParams)
             each travel in travels
                 +c-popular-travels-snippet(travel)

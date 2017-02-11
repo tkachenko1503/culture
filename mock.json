@@ -160,6 +160,26 @@
         },
         {
             "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Российский этнографический музей",
+            "place": "Санкт-Петербург"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Башня святого олафа",
+            "place": "Выборг"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Музей-заповедник царицыно",
+            "place": "Моска"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
+            "name": "Никитский ботанический сад",
+            "place": "Ялта"
+        },
+        {
+            "image": "http://placehold.it/236x170&text=Russia",
             "name": "Союзмультфильм",
             "place": "Моска"
         }

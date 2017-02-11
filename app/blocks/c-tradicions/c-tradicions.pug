@@ -8,7 +8,7 @@ mixin c-tradicions(tradicions)
             slidesToScroll: 2
         };
         
-    .c-tradicions
+    .c-section.c-section_top-indent_m.c-tradicions
         +c-carousel-slider('ТРАДИЦИИ', carouselParams)
                 each tradicion in tradicions
                     +c-tradicions-snippet(tradicion)

@@ -8,7 +8,7 @@ mixin c-russia-forms(forms)
             slidesToScroll: 2
         };
         
-    .c-russia-forms
+    .c-section.c-section_top-indent_m.c-russia-forms
         +c-carousel-slider('ОБРАЗЫ РОССИИ', carouselParams)
             each form in forms
                 +c-russia-forms-snippet(form)

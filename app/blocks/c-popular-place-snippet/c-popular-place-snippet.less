@@ -10,12 +10,27 @@
 .c-popular-place-snippet__title {
     color: #3C3C3C;
     font-size: 18px;
+    font-weight: bold;
     margin-top: 16px;
 }
 
+.c-popular-place-snippet__location,
 .c-popular-place-snippet__count {
     color: #3C3C3C;
     opacity: .6;    
     font-size: 12px;
     margin-top: 5px;
+}
+
+.c-popular-place-snippet.c-popular-place-snippet_type_location {
+    width: 236px;
+
+    .caption {
+        text-align: left;
+        width: 80%;
+    }
+
+    .c-popular-place-snippet__title {
+        color: #333333
+    }
 }

@@ -2,13 +2,14 @@ include ../c-carousel-slider/c-carousel-slider.pug
 include ../c-popular-place-snippet/c-popular-place-snippet.pug
 
 mixin c-popular-places(places, type, params)
-    - 
+    -
+        var topIndent = type === 'categories' ? 'sm' : 'm';
         var carouselParams = Object.assign({
             slidesToShow: 4,
             slidesToScroll: 2
         }, params);
 
-    .c-section.c-section_top-indent_sm.c-popular-places
+    .c-section.c-popular-places(class='c-section_top-indent_' + topIndent)
         +c-carousel-slider('ПОПУЛЯРНЫЕ МЕСТА', carouselParams)
             if type === 'categories'
                 each place in places                
