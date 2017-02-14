@@ -47,7 +47,10 @@ export const SearchMap = View.extend({
         const pointId = event.currentTarget.dataset['pointId'];
         const point = _.find(this.points, {id: Number(pointId)});
 
-        this.map.setCenter(point.coords);
+        this.map.setCenter([
+            point.coords[0] - 0.02,
+            point.coords[1] + 0.02
+        ]);
         point.placemark.balloon.open();
     }
 });
