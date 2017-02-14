@@ -1,0 +1,10 @@
+include ../image/image.pug
+
+mixin c-search-map-point-snippet(point)
+    .c-search-map-point-snippet(data-point-id=point.id)
+        +img-responsive(point.image, point.title)
+
+        .capiton
+            .c-search-map-point-snippet__title= point.title
+            .c-search-map-point-snippet__city= point.city
+            .c-search-map-point-snippet__cathegory= point.cathegory

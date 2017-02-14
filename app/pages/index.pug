@@ -13,7 +13,7 @@ include ../blocks/c-popular-cities/c-popular-cities.pug
 
 block page-content
     main
-        +c-search-map
+        +c-search-map(searchMapPoints)
         +c-popular-tags(popularTags)
         +c-popular-places(popularPlaces, 'categories')
         +c-virtual-tours(virtualTours, virtualToursFilters)

@@ -1,4 +1,34 @@
-mixin c-search-map
-    #culture-head-map.c-search-map(
-        data-js-widget='searchMap'
+include ../c-carousel-slider/c-carousel-slider.pug
+include ../c-search-map-point-snippet/c-search-map-point-snippet.pug
+include ../button/button.pug
+
+mixin c-search-map(points)
+    -
+        var carouselParams = {};
+
+    .c-search-map(
+        data-js-widget='searchMap',
+        data-js-params={
+            points: points,
+            slider: {
+                slidesToShow: 5,
+                slidesToScroll: 2
+            }
+        }
     )
+        .c-search-map__container
+
+        .c-search-map__slider.c-carousel-slider
+            +c-carousel-slider__markup
+                .c-search-map__points-summary
+                    .c-search-map__region-suggest
+                        span ВАШ ГОРОД МОСКВА?
+                        .c-search-map__region-approve
+                            +btn('ДА', 'hot')
+                            +btn('ВЫБРАТЬ ДРУГОЙ ГОРОД')
+                            +btn('ПО ВСЕЙ РОССИИ')
+                    .c-search-map__results
+                        span ПОИСК ПО КАРТЕ #{points.length} МЕСТ РЯДОМ
+
+                each point in points
+                    +c-search-map-point-snippet(point)

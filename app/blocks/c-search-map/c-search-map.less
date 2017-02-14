@@ -1,3 +1,85 @@
 .c-search-map {
+    position: relative;
+
+    .c-carousel-slider__controls {
+        position: absolute;
+        width: ~"calc(100% - 100px)";
+        margin: 0 50px;
+        top: 135px;
+        z-index: 1;
+        border: 0;
+    }
+
+    .c-carousel-slider__nav-previous {
+        float: left;
+    }
+    
+    .c-carousel-slider__nav-next {
+        float: right;
+    }
+
+    .c-carousel-slider__nav-previous,
+    .c-carousel-slider__nav-next {
+        width: 36px;
+        height: 36px;
+        background: #FFFFFF;
+        text-align: center;
+        box-shadow: 1px 3px 8px -1px #000;
+        border-radius: 4px;
+
+        .glyphicon {
+            margin-top: 10px;
+        }
+    }
+
+    .c-carousel-slider__nav-buttons {
+        width: 100%;
+    }
+}
+
+.c-search-map__slider {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 1410px;
+}
+
+.c-search-map__container  {
     min-height: 540px;
+}
+
+.c-search-map__results,
+.c-search-map__region-suggest {
+    width: 420px;
+    color: #3C3C3C;
+    font-size: 12px;
+    font-weight: bold;
+    background: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+.c-search-map__region-suggest {
+    top: 210px;
+    height: 88px;
+    padding: 15px 30px;    
+}
+
+.c-search-map__results {
+    top: 215px;
+    height: 44px;
+    padding: 15px 30px;    
+}
+
+.c-search-map__region-approve {
+    margin-top: 10px;
+    
+    .btn {
+        font-size: 10px;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
