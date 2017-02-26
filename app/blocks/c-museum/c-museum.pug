@@ -1,2 +1,66 @@
-mixin c-museum
-    .c-museum
+include ../image/image.pug
+
+mixin c-museum(slides)
+    - 
+        var infoSliderParams = {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            appendDots: '.c-info-slider__nav-dots'
+        };
+        var museumParams = {
+            infoSliderParams: infoSliderParams,
+            slides: slides
+        };
+
+    .c-section.c-section_top-indent_m.c-museum(
+        data-js-widget='museum'
+        data-js-params=museumParams
+    )
+        .c-museum__content.container
+            .row
+                .c-museum__info-slider.col-xs-3
+                    .c-museum__info-title МУЗЕИ
+                    +c-museum__info-slider(sliderParams)
+                        each slide in slides
+                            +c-museum__info-snippet(slide)
+
+                .col-xs-9
+                    +c-museum__gallary(slides[0].pictures)
+
+
+mixin c-museum__info-slider(sliderParams)
+    .c-info-slider
+        .c-info-slider__slides
+            block
+
+        .c-info-slider__controls
+                .c-info-slider__nav-buttons
+                    button.btn.c-info-slider__nav-previous(class='btn-default', type='button')
+                        +icon('menu-left')
+
+                    span.c-info-slider__nav-dots
+                    
+                    button.btn.c-info-slider__nav-next(class='btn-default', type='button')
+                        +icon('menu-right')
+                        
+
+mixin c-museum__gallary(pictures)
+    .c-museum__gallary
+        .c-museum__gallary-coll
+            +img-responsive(pictures[0])(class='c-museum__picture_order_first')
+
+            .c-museum__gallary-inner-colls
+                .c-museum__gallary-coll.c-museum__gallary-coll_size_small
+                    +img-responsive(pictures[2])(class='c-museum__picture_order_third')
+                .c-museum__gallary-coll.c-museum__gallary-coll_size_small
+                    +img-responsive(pictures[3])(class='c-museum__picture_order_firth')
+
+        .c-museum__gallary-coll
+            +img-responsive(pictures[1])(class='c-museum__picture_order_second')
+
+
+mixin c-museum__info-snippet(slide)
+    .c-museum__info-snippet
+        h3.c-museum__info-snippet-title= slide.title
+        .c-museum__info-snippet-description= slide.description

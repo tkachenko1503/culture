@@ -2,10 +2,12 @@ import _ from 'lodash';
 import { View } from 'backbone';
 import { Carousel } from './blocks/c-carousel-slider/c-carousel-slider';
 import { SearchMap } from './blocks/c-search-map/c-search-map';
+import { Museum } from './blocks/c-museum/c-museum';
 
 const WIDGETS = {
     carousel: Carousel,
-    searchMap: SearchMap
+    searchMap: SearchMap,
+    museum: Museum
 };
 
 const App = View.extend({

@@ -1,0 +1,86 @@
+.c-info-slider {
+    .slick-dots {
+        display: block;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+    
+    li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+
+            &::before {
+                font-size: 30px;
+                line-height: 20px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 20px;
+                height: 20px;
+                content: "•";
+                text-align: center;
+                color: #E9E9E9;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+    }
+
+    li.slick-active button:before {
+        opacity: .75;
+        color: #ED2324;
+    }
+}
+
+.c-info-slider__nav-buttons {
+    display: flex;
+}
+
+.c-info-slider__nav-dots {
+    flex-grow: 1;
+}
+
+.c-info-slider__btn {
+    background: transparent;
+    color: #C4C4C4;
+    border: 1px solid #EEEEEE;
+}
+
+.c-info-slider__nav-previous,
+.c-info-slider__nav-next {
+    width: 36px;
+    height: 36px;
+    padding-top: 8px;
+    padding-left: 10px;
+
+    &:extend(.c-info-slider__btn);
+
+    &:focus,
+    &:active,
+    &:hover,
+    &:active:focus {
+        &:extend(.c-info-slider__btn);
+        outline: none;
+    }
+}
